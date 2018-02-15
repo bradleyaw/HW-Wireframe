@@ -14,23 +14,25 @@ footer {
     margin-top: 15px;    
     padding: 0px;
     text-align: center;
-    float: left;
 }
 
 header,
 nav,
 footer {
     width: 100%;
+    padding: 10px 0px;
 }
 
 section {
     width: 495px;
     margin-right: 15px;
+    float: left;
 }
 
 aside {
-    width: 450px;
+    width: 446px;
     padding-bottom: 214px;
+    float: right;
 }
 
 article {
@@ -64,6 +66,17 @@ p {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
     color: #777;
+}
+
+.clear::after {
+content: "";
+display: block;
+clear: both;
+}
+
+.clear {
+    background-color: #777;
+    margin-top: 0px;
 }
 
 #ap {
